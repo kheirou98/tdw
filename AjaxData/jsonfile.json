@@ -1,0 +1,17 @@
+{
+    "module": [
+        "Bureatique",
+        "Infographie",
+        "Langues",
+        "Management"
+    ],
+    "volume": [
+        100, 3, 1, 3
+    ],
+    "prixht": [
+        1200, 300, 255, 234
+    ],
+    "taux": [
+        200, 17, 0, 100
+    ]
+}

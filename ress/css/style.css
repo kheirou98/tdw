@@ -1,0 +1,172 @@
+.formations{}
+
+.lien{}
+
+/*   les liens qui descendent d’une liste lors des survoles      */
+li a:hover {
+}
+
+/*   premiere ligne d'un tableau     */
+table > tr :first-child{
+    border: 1px solid black;
+}
+/*  premiere colone d'un tableau     */
+table th{
+    color: blue;
+}
+h1{
+    background: #4cae4c;
+}
+/* Marge interieure et exterieure */
+body{
+    margin:50px;
+    padding: 25px;
+    border: 1px solid whitesmoke;
+}
+thead>tr:first-child>th {
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}
+
+li{
+    position: relative;
+    list-style-type:none;
+    display:block;
+    float:left;
+    width:18%;
+    margin: 10px auto;
+    border: 10px solid green;
+    background: red;
+}
+li>a {
+    color: #FF0000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sticky{
+    
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    top: 0;
+
+}
+#sidebar {
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 0; // required as well.
+}
+.dropdown {
+     position: relative;
+     display: inline-block;
+ }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 99999;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.slideShow{
+    overflow: hidden;
+    height: 400px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+
+}
+
+.slideShow img{
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border: 0 ;
+    border-right:20px solid black;
+    animation: slide 20s linear infinite;
+}
+.slideShow:hover img{
+        animation-play-state: paused;
+    }
+
+
+@keyframes slide {
+    0%{
+        left: -290%;
+    }
+
+    100%{
+        left: 0%;
+    }
+
+}
+.header {
+  font-size: 120%;
+  background: #F8F8FF;
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #5F9EA0;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form , .content{
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}

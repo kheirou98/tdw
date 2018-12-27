@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<form  >
+    <h3>ajouter une formation</h3>
+    entrer le nom de votre formation <input type="text" id="text"><br>
+    entrer le volume horaire en heure <input type="text" id="heur"><br>
+    entrer le prix ht <input type="text" id="ht"><br>
+    entrer le taux de tax <input type="text" id="taxx"><br>
+    <button onclick="clicked()" id="add"> add</button>
+</form>
+
+</body>
+<script src="../Libraries/JS/jquery.min.js"></script>
+<script>
+
+       $( "#add" ).click(function() {
+           $.ajax
+           ({
+               type: "GET",
+               dataType : 'json',
+               async: false,
+               url: 'http://your.host/save_json.php',
+               data: { data: JSON.stringify("") },
+               success: function () {alert("Thanks!"); },
+               failure: function() {alert("Error!");}
+           });
+       });
+
+
+</script>
+</html>

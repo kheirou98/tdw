@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<link rel="stylesheet" href="ress/css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>ECOLE PRIVEE ENAJAH</title>
+</head>
+<body>
+<h1 align="center">ECOLE PRIVEE ENAJAH -
+    <bdi>المدرسة الخاصة النجاح</bdi>
+</h1>
+<div class="slideShow">
+    <img src="ress/back.jpg" class="img1" alt="BackgroundImg" width="100%" height="100%">
+    <img src="ress/diapo2.jpg" alt="BackgroundImg" width="100%" height="100%">
+    <img src="ress/diapo3.jpg" alt="BackgroundImg" width="100%" height="100%">
+    <img src="ress/diapo4.jpg" alt="BackgroundImg" width="100%" height="100%">
+</div>
+<h2 align="center">Formations</h2>
+<div class="sticky">
+    <ul>
+        <li class="lien"><a href="http://www.esi.dz"> Bureautique </a> </li>
+       <li class="lien"><a href="http://www.esi.dz"> infographie </a> </li>
+       <li class="lien"><a href="http://www.esi.dz"> langues </a></li>
+       <li class="lien"><a href="http://www.esi.dz"> Management </a> </li>
+       <li class="lien"><a href="http://www.esi.dz">Comptabilité </a></li>
+
+    </ul>
+</div>
+<div align="center">
+    <video align="center" class="video" src="ress/Video%20accueil.mp4" controls></video>
+</div>
+
+<table id="formationsTable" border="1px" align="center" class="tableau">
+    <thead>
+    <tr>
+        <th>Formation</th>
+        <th>Volume horraire</th>
+        <th>Prix HT</th>
+        <th>Taxe</th>
+        <th>Prix TTI</th>
+    </tr>
+    </thead>
+    <tbody align="center">
+	  <tr>
+         <th class="entete" scope="row">Bureautique</th>
+           <td rowspan="2" style="background-color:green">4</td>
+           <td id="ht1" class="prix">1000000</td>
+           <td id="taxe1" class="taxe"> 17</td>
+           <td id ="tti1" class="resultat" ></td>
+	  </tr>
+	  <tr>
+         <th  class ="entete" scope="row">infographie</th>
+           <td id="ht2" class="prix">5000000</td>
+		   <td id="taxe2" class="taxe"> 17</td>
+           <td id="tti2" class="resultat"></td>
+      </tr>
+	  <tr>
+         <th  class ="entete" scope="row">langues</th>
+          <td>4</td>
+          <td id="ht3" class="prix">5000000</td>
+          <td id ="taxe3" class="taxe">0</td>
+          <td id ="tti3" class="resultat"></td>
+      </tr>
+      <tr>
+         <th class="entete" scope="row">Management</th>
+         <td rowspan="2" style="background-color:yellow">5</td>
+         <td id ="ht4" class="prix">7000000</td>
+         <td id="taxe4" class="taxe"> 19 </td>
+         <td id="tti4" class="resultat"></td>
+	  </tr>
+	  <tr>
+         <th class ="entete" scope="row">Comptabilité</th>
+         <td id="ht5" class="prix">7000000</td>
+		 <td id="taxe5" class="taxe"> 19 </td>
+         <td id="tti5" class="resultat"></td>
+	 </tr>
+	</tbody>
+   
+</table>
+<div >
+    <h1 align="center">AJOUT D'UNE FORMATION</h1>
+    <hr>
+    <div>
+        <label for="text">Nom de la formation </label><input type="text" id="nom_formation" name="text" required><br>
+        <label for="heure">Volume horraire</label> <input type="text" id="volume_horaire" name="heure"><br>
+        <label for="ht">Prix HT</label><input type="text" id="prixHc" name="ht"><br>
+        <label for="taxe">Taxe</label> <input type="text" id="Taxe" name="taxe"><br>
+        <button id="ok"> ok </button>
+    </div>
+    <hr>
+</div>
+</body>
+<meta http-equiv="pragma" content="no-cache"/>
+</html>
+<script src="Libraries/JS/jquery-3.3.1.min.js"></script>
+<script src="Libraries/JS/jquery-3.3.1.js"></script>
+<script src="Controllers/exo2.js"></script>
+
+
